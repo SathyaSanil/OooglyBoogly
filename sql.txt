@@ -1,0 +1,38 @@
+create database mathai;
+use mathai;
+create table emplo(emp_id varchar (30),
+  emp_name varchar(50),
+  emp_designation varchar(50), 
+  emp_age int);
+insert into emplo
+(emp_id,emp_name,emp_designation,emp_age)
+values(
+1,'a','hr',26),
+(2,'c','ds',34),
+(3,'c','da',32),
+(4,'d','se',35);
+UPDATE emplo SET emp_name='ad' ,emp_age=24 WHERE emp_id=;
+create database unni;
+use unni;
+create table employe(emp_id varchar (30),
+  emp_name varchar(50),
+  emp_designation varchar(50), 
+  emp_age int);
+insert into employe
+(emp_id,emp_name,emp_designation,emp_age)
+values(
+1,'a','hr',26),
+(2,'c','ds',34),
+(3,'c','da',32),
+(4,'d','se',35);
+UPDATE employe SET emp_name='ad' ,emp_age=24 WHERE emp_id=1;
+
+
+
+select*from employe;
+UPDATE employe SET emp_designation='ceo' WHERE emp_id=2;
+delete from employe where emp_id='3';
+delete from employe where emp_age='26';
+alter table employe add emp_dept varchar(30), 
+add emp_location varchar(25);
+select * from employe;
